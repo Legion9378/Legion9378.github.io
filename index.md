@@ -25,8 +25,8 @@
     </tr>
     <tr>
       <td align=center>Link:</td>
-        <td align=center><a href="/clickerultimate/index.html" target="_blank">Play!</a> <font size="8">(Opens in new Tab/Window!)</font></td>
-      <td align=center><a href="/gminer/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
+        <td align=center><a href="/clickerultimate/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
+      <td align=center><a href="/gminer/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
     </tr>
     <tr>
       <td align=center>&nbsp;</td>
@@ -45,8 +45,8 @@
     </tr>
     <tr>
       <td align=center>Link:</td>
-      <td align=center><a href="/overseer/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
-      <td align=center><a href="/coolidle/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
+      <td align=center><a href="/overseer/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
+      <td align=center><a href="/coolidle/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
     </tr>
     <tr>
       <td align=center>&nbsp;</td>
@@ -60,13 +60,13 @@
     </tr>
     <tr>
       <td align=center>Description:</td>
-      <td align=center> </td>
-      <td align=center> </td>
+      <td align=center> Another simple incremental-game, about selling drugs. You start with only a gun, and you have to build a drug empire to become more than a trillionnaire. </td>
+      <td align=center> Idle-Quester is a web version of the original app/game Idle-Quest for Android.</td>
     </tr>
     <tr>
       <td align=center>Link:</td>
-      <td align=center><a href="/blackmarket/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
-      <td align=center><a href="/idle-quester/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
+      <td align=center><a href="/blackmarket/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
+      <td align=center><a href="/idle-quester/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
     </tr>
     <tr>
       <td align=center>&nbsp;</td>
@@ -76,17 +76,17 @@
     <tr>
       <th width=14% align=center>Name:</th>
       <th width=43% align=center>Money Life</th>
-      <th width=43% align=center>GreatShaftEnterprises</th>
+      <th width=43% align=center>GiantShaftEnterprises</th>
     </tr>
     <tr>
       <td align=center>Description:</td>
-      <td align=center> </td>
-      <td align=center> </td>
+      <td align=center> It's just an <a href="http://www.kongregate.com/games/hyperhippogames/adventure-capitalist" target="_blank">Adventure Capitalist</a> (Opens in new Tab/Window!) clone.</td>
+      <td align=center> Incremental idle game about building businesses and mining asteroids....and maybe conquering the galaxy along the way.</td>
     </tr>
     <tr>
       <td align=center>Link:</td>
-      <td align=center><a href="/moneylife/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
-      <td align=center><a href="/gse/index.html" target="_blank">Play!</a> (Opens in new Tab/Window!)</td>
+      <td align=center><a href="/moneylife/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
+      <td align=center><a href="/gse/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
     </tr>
     <tr>
       <td align=center>&nbsp;</td>
