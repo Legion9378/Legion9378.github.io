@@ -1505,7 +1505,7 @@ function newGame() {
                 description: function () { return "Discover the method of cutting trees down to keep natural resources for yourself. This might lead to a better future."; },
                 resourceCost: {
                     water: {
-                        base: 20
+                        base: 10
                     }
                 },
                 effect: function () { unlock("wood", "lumberjack"); tutorialMessage("resources"); },
