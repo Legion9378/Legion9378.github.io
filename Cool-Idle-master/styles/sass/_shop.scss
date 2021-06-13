@@ -1,0 +1,25 @@
+#loc_shop {
+    .shop_section {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .shop_item {
+        background-color: white;
+        width: 240px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 2px;
+        cursor: pointer;
+
+        .cost {
+            font-weight: bold;
+        }
+
+        &.purchased {
+            opacity: 0.5;
+            background-color: lightgrey;
+            cursor: default;
+        }
+    }
+}
