@@ -7,7 +7,7 @@ minions = {
     price: 10,
     priceModifier: 1.5,
     attributes: {
-      'goldPerSec' : 1
+      'goldPerSec' : 3
     }
   },
   1 : {
@@ -16,7 +16,7 @@ minions = {
     price: 1000,
     priceModifier: 1.5,
     attributes: {
-      'goldPerSec' : 70,
+      'goldPerSec' : 370,
       'diamondsPerSec': 0.5
     }
   },
@@ -26,7 +26,7 @@ minions = {
     price: 100000,
     priceModifier: 1.5,
     attributes: {
-      'goldPerSec' : 700,
+      'goldPerSec' : 3700,
       'diamondsPerSec': 3
     }
   },
@@ -36,7 +36,7 @@ minions = {
     price: 1000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 5000,
+      'goldPerSec' : 35000,
       'diamondsPerSec': 20
     }
   },
@@ -46,7 +46,7 @@ minions = {
     price: 80000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 30000,
+      'goldPerSec' : 330000,
       'diamondsPerSec': 100
     }
   },
@@ -56,7 +56,7 @@ minions = {
     price: 1900000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 85000,
+      'goldPerSec' : 385000,
       'diamondsPerSec': 400
     }
   },
@@ -66,7 +66,7 @@ minions = {
     price: 29000000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 500000,
+      'goldPerSec' : 3500000,
       'diamondsPerSec': 2700
     }     
   },
@@ -76,7 +76,7 @@ minions = {
     price: 300000000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 3000000,
+      'goldPerSec' : 33000000,
       'diamondsPerSec': 16000
     }     
   },
@@ -86,7 +86,7 @@ minions = {
     price: 50000000000000,
     priceModifier: 1.3,
     attributes: {
-      'goldPerSec' : 25000000,
+      'goldPerSec' : 325000000,
       'diamondsPerSec': 98000
     }     
   }
