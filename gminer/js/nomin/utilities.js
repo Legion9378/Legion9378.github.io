@@ -5,7 +5,7 @@ charlvl = {
   initialLvl: 1,
   xpModifier: 1.25,
   xpPerSecModifier: 1.07,
-  skillPerLvl: 4
+  skillPerLvl: 15
 };
 
 var stats = new Object();
