@@ -3,10 +3,10 @@ var partsTrigged = [];
 var currentTimeParts = [];
 var partsTimeMultiplier = [];
 var parts = [
-	new Part("Magazine",	0,	25),
+	new Part("Magazine",	0,	20),
 	new Part("Trigger",		0,	10),
 	new Part("Barrel",		0,	15),
-	new Part("Grip",		0,	30)
+	new Part("Grip",		0,	25)
 ];
 
 var gunsOwned = [];
@@ -14,10 +14,10 @@ var gunsTrigged = [];
 var currentTimeGuns = [];
 var gunsTimeMultiplier = [];
 var guns = [
-	new Gun("AK-47",		1,	120,	0.007),
-	new Gun("M4A4",			1,	90,		0.012),
-	new Gun("USP-S",		1,	45,		0.09),
-	new Gun("Glock-18",		1,	60,		0.07)
+	new Gun("AK-47",		1,	60,	0.007),
+	new Gun("M4A4",			1,	45,		0.012),
+	new Gun("USP-S",		1,	22,		0.09),
+	new Gun("Glock-18",		1,	30,		0.07)
 ];
 
 var autocraft = false;
