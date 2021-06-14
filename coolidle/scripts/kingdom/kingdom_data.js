@@ -1,4 +1,4 @@
-const kingdom_claimTileCostBase = 500;
+const kingdom_claimTileCostBase = 50;
 const kingdom_claimTileCostFactor = 1.5;
 
 const kingdom_resourceEnum = {
@@ -234,23 +234,23 @@ var kingdom_buildings = [
 		buildButtonLink: null,
 		placeButtonLink: null,
         output: function (cell) {
-			kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 1;
+			kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 5;
 			if (game.kingdom.upgrades[kingdom_upgradeEnum.WOODCUTTERADJACENCY]) {
 				if (kingdom_getTerrainNorth(cell) == kingdom_terrainEnum.FOREST
 				&& kingdom_getConstructionNorth(cell) == kingdom_buildingEnum.EMPTY) {
-					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 1;
+					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 5;
 				}
 				if (kingdom_getTerrainEast(cell) == kingdom_terrainEnum.FOREST
 				&& kingdom_getConstructionEast(cell) == kingdom_buildingEnum.EMPTY) {
-					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 1;
+					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 5;
 				}
 				if (kingdom_getTerrainSouth(cell) == kingdom_terrainEnum.FOREST
 				&& kingdom_getConstructionSouth(cell) == kingdom_buildingEnum.EMPTY) {
-					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 1;
+					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 5;
 				}
 				if (kingdom_getTerrainWest(cell) == kingdom_terrainEnum.FOREST
 				&& kingdom_getConstructionWest(cell) == kingdom_buildingEnum.EMPTY) {
-					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 1;
+					kingdom_outputs.resource[kingdom_resourceEnum.WOOD] += 5;
 				}
 			}
 		},
@@ -346,7 +346,7 @@ var kingdom_buildings = [
 		buildButtonLink: null,
 		placeButtonLink: null,
         output: function (cell) {
-			kingdom_outputs.resource[kingdom_resourceEnum.STONE] += 1;
+			kingdom_outputs.resource[kingdom_resourceEnum.STONE] += 5;
 		},
 		unlocked: false,
 		description: function() {
