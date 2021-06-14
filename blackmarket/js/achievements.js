@@ -9,7 +9,8 @@ var totalMoneyAch = [
 	new Achievement("Septillionaire",				"Earn $1.000 septillion of total money",	1e24),
 	new Achievement("Octillionaire",				"Earn $1.000 octillion of total money",		1e27),
 	new Achievement("Nonillionaire (rly?)",			"Earn $1.000 nonillion of total money",		1e30),
-	new Achievement("Decillionnaire (L33t hax0r)",	"Earn $1.000 decillion of total money",		1e33)
+	new Achievement("Decillionnaire (L33t hax0r)",	"Earn $1.000 decillion of total money",		1e33),
+	new Achievement("Uncountable (L33t hax0r II)",	"Earn $1.000 undecillion of total money",		1e36)
 ];
 var experienceAchOwned;
 var experienceAch = [
@@ -27,7 +28,19 @@ var experienceAch = [
 	new Achievement("Prestigious II",	"Earn 500.000 trillion experience",		5e14),
 	new Achievement("Prestigious III",	"Earn 1.000 quadrillion experience",	1e15),
 	new Achievement("Prestigious IV",	"Earn 5.000 quadrillion experience",	5e15),
-	new Achievement("Prestigious V",	"Earn 50.000 quadrillion experience",	5e16)
+	new Achievement("Prestigious V",	"Earn 50.000 quadrillion experience",	5e16),
+	new Achievement("Prestigious VI",	"Earn 100.000 quadrillion experience",	1e17),
+	new Achievement("Prestigious VII",	"Earn 500.000 quadrillion experience",	5e17),
+	new Achievement("Prestigious VIII",	"Earn 1.000 quintillion experience",	1e18),
+	new Achievement("Prestigious IX",	"Earn 5.000 quintillion experience",	5e18),
+	new Achievement("Prestigious X",	"Earn 10.000 quintillion experience",	1e19),
+	new Achievement("Masterfully I",	"Earn 100.000 quintillion experience",	1e20),
+	new Achievement("Masterfully II",	"Earn 1.000 sextillion experience",	1e21),
+	new Achievement("Masterfully III",	"Earn 1.000 septillion experience",	1e24),
+	new Achievement("Masterfully IV",	"Earn 1.000 octillion experience",	1e27),
+	new Achievement("Masterfully V",	"Earn 1.000 nonillion experience",	1e30),
+	new Achievement("Masterfully VI",	"Earn 1.000 decillion experience",	1e33),
+	new Achievement("Masterfully VII",	"Earn 1.000 undecillion experience",	1e36)
 ];
 var shootAchOwned;
 var shootAch = [
@@ -50,7 +63,27 @@ var shootAch = [
 	new Achievement("Shooter Elite VII",	"Shoot 250.000 million times",	250000000),
 	new Achievement("Shooter Elite VIII",	"Shoot 1.000 billion times",	1000000000),
 	new Achievement("Shooter Elite IX",		"Shoot 1.337 billion times",	1337000000),
-	new Achievement("Shooter Elite X",		"Shoot 5.000 billion times",	5000000000)
+	new Achievement("Shooter Elite X",		"Shoot 5.000 billion times",	5000000000),
+	new Achievement("Sniper I",		"Shoot 10.000 billion times",	10000000000),
+	new Achievement("Sniper II",		"Shoot 50.000 billion times",	50000000000),
+	new Achievement("Sniper III",		"Shoot 100.000 billion times",	100000000000),
+	new Achievement("Sniper IV",		"Shoot 500.000 billion times",	500000000000),
+	new Achievement("Sniper V",		"Shoot 1.000 trillion times",	1000000000000),
+	new Achievement("Sniper VI",		"Shoot 5.000 trllion times",	5000000000000),
+	new Achievement("Sniper VII",		"Shoot 10.000 trllion times",	10000000000000),
+	new Achievement("Sniper VIII",		"Shoot 50.000 trllion times",	50000000000000),
+	new Achievement("Sniper IX",		"Shoot 100.000 trllion times",	100000000000000),
+	new Achievement("Sniper X",		"Shoot 500.000 trllion times",	500000000000000),
+	new Achievement("Master Sniper I",		"Shoot 1.000 quadrillion times",	1000000000000000),
+	new Achievement("Master Sniper II",		"Shoot 5.000 quadrillion times",	5000000000000000),
+	new Achievement("Master Sniper III",		"Shoot 10.000 quadrillion times",	10000000000000000),
+	new Achievement("Master Sniper IV",		"Shoot 50.000 quadrillion times",	50000000000000000),
+	new Achievement("Master Sniper V",		"Shoot 100.000 quadrillion times",	100000000000000000),
+	new Achievement("Master Sniper VI",		"Shoot 500.000 quadrillion times",	500000000000000000),
+	new Achievement("Master Sniper VII",		"Shoot 1.000 quintillion times",	1000000000000000000),
+	new Achievement("Master Sniper VIII",		"Shoot 5.000 quintillion times",	5000000000000000000),
+	new Achievement("Master Sniper IX",		"Shoot 10.000 quintillion times",	10000000000000000000),
+	new Achievement("Master Sniper X",		"Shoot 50.000 quintillion times",	50000000000000000000)
 ];
 var reloadAchOwned;
 var reloadAch = [
