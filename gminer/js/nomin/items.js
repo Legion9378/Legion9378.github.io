@@ -3,8 +3,8 @@ var gamble = new Object();
 gamble = {
   price: 1000,
   dprice: 300,
-  levelModifier: 1.40,
-  dlevelModifier: 1.35
+  levelModifier: 1.20,
+  dlevelModifier: 1.15
 };
 
 var items = new Object();
