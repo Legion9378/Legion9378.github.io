@@ -123,106 +123,106 @@ const dungeon_items = [
     {
         idNumber: dungeon_itemEnum.POTIONTINY,
         name: "Tiny Potion",
-        description: "A tiny vial of healing liquid that gives 100 HP.",
+        description: "A tiny vial of healing liquid that gives 700 HP.",
         imageLink: "potion_tiny.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.hp += 100;
-            dungeon_createFloatingText(100, "#00FF00", 275, 275);
+            dungeon_player.hp += 700;
+            dungeon_createFloatingText(700, "#00FF00", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.POTIONSMALL,
         name: "Small Potion",
-        description: "A small healing potion that gives 500 HP.",
+        description: "A small healing potion that gives 1500 HP.",
         imageLink: "potion_small.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.hp += 500;
-            dungeon_createFloatingText(500, "#00FF00", 275, 275);
+            dungeon_player.hp += 1500;
+            dungeon_createFloatingText(1500, "#00FF00", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.POTIONMEDIUM,
         name: "Medium Potion",
-        description: "A regular-sized restorative potion that gives 2,000 HP.",
+        description: "A regular-sized restorative potion that gives 22,000 HP.",
         imageLink: "potion_medium.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.hp += 2000;
-            dungeon_createFloatingText(2000, "#00FF00", 275, 275);
+            dungeon_player.hp += 22000;
+            dungeon_createFloatingText(22000, "#00FF00", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.POTIONLARGE,
         name: "Large Potion",
-        description: "A bumper-sized health potion that gives a massive 10,000 HP!",
+        description: "A bumper-sized health potion that gives a massive 150,000 HP!",
         imageLink: "potion_large.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.hp += 10000;
-            dungeon_createFloatingText(10000, "#00FF00", 275, 275);
+            dungeon_player.hp += 150000;
+            dungeon_createFloatingText(150000, "#00FF00", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.POTIONHUGE,
         name: "Huge Potion",
-        description: "This absurdly big potion is almost as big as you, and gives a huge 50,000 HP!",
+        description: "This absurdly big potion is almost as big as you, and gives a huge 550,000 HP!",
         imageLink: "potion_huge.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.hp += 50000;
-            dungeon_createFloatingText(50000, "#00FF00", 275, 275);
+            dungeon_player.hp += 550000;
+            dungeon_createFloatingText(550000, "#00FF00", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.ATKTINY,
         name: "Tiny Attack Gem",
-        description: "Increases your Attack by 1",
+        description: "Increases your Attack by 15",
         imageLink: "atk_tiny.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.atk += 1;
-            dungeon_createFloatingText("Attack + 1", "#FF0000", 275, 275);
+            dungeon_player.atk += 15;
+            dungeon_createFloatingText("Attack + 15", "#FF0000", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.DEFTINY,
         name: "Tiny Defense Gem",
-        description: "Increases your Defense by 1",
+        description: "Increases your Defense by 15",
         imageLink: "def_tiny.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.def += 1;
-            dungeon_createFloatingText("Defense + 1", "#0000FF", 275, 275);
+            dungeon_player.def += 15;
+            dungeon_createFloatingText("Defense + 15", "#0000FF", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.ATKSMALL,
         name: "Small Attack Gem",
-        description: "Increases your Attack by 3",
+        description: "Increases your Attack by 35",
         imageLink: "atk_small.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.atk += 3;
-            dungeon_createFloatingText("Attack + 3", "#FF0000", 275, 275);
+            dungeon_player.atk += 35;
+            dungeon_createFloatingText("Attack + 3"5, "#FF0000", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.DEFSMALL,
         name: "Tiny Defense Gem",
-        description: "Increases your Defense by 3",
+        description: "Increases your Defense by 35",
         imageLink: "def_small.png",
         imageCache: null,
         effect: function () {
-            dungeon_player.def += 3;
-            dungeon_createFloatingText("Defense + 3", "#0000FF", 275, 275);
+            dungeon_player.def += 35;
+            dungeon_createFloatingText("Defense + 35", "#0000FF", 275, 275);
         }
     },
     {
         idNumber: dungeon_itemEnum.ORAGAMISWORD,
         name: "Oragami Sword",
-        description: "This carefully folded sword will deliver painful papercuts to your foes.</p><p>Weapon</p><p>Attack + 2",
+        description: "This carefully folded sword will deliver painful papercuts to your foes.</p><p>Weapon</p><p>Attack + 25",
         imageLink: "oragami_sword.png",
         imageCache: null,
         effect: function () {
@@ -354,20 +354,20 @@ const dungeon_equipment = [
     {
         idNumber: dungeon_equipmentEnum.ORAGAMISWORD,
         name: "Oragami Sword",
-        description: "This carefully folded sword will deliver painful papercuts to your foes.</p><p>Attack + 2",
+        description: "This carefully folded sword will deliver painful papercuts to your foes.</p><p>Attack + 25",
         imageLink: "oragami_sword.png",
         imageCache: null,
         type: dungeon_equipmentTypeEnum.WEAPON,
-        atk: 2
+        atk: 25
     },
     {
         idNumber: dungeon_equipmentEnum.PAPERBAG,
         name: "Paper Bag",
-        description: "Let's see your opponent fight their way past this!</p><p>Defense + 3",
+        description: "Let's see your opponent fight their way past this!</p><p>Defense + 35",
         imageLink: "",
         imageCache: null,
         type: dungeon_equipmentTypeEnum.SHIELD,
-        def: 3
+        def: 35
     }
 ];
 
@@ -444,9 +444,9 @@ const dungeon_dungeons = [
         ],
         startX: 7,
         startY: 0,
-        puzzleHp: 250,
-        puzzleAtk: 5,
-        puzzleDef: 0,
+        puzzleHp: 2550,
+        puzzleAtk: 55,
+        puzzleDef: 50,
         puzzleWeapon: dungeon_equipmentEnum.NONE,
         puzzleShield: dungeon_equipmentEnum.PAPERBAG,
         puzzleAccessory: dungeon_equipmentEnum.NONE
