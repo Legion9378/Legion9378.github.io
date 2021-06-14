@@ -3,64 +3,64 @@ var shootRewardUpgrades = [
     new Upgrade("Paper Targets",                                10,         			    function() { shoot[7] *= 5 },   "shoot reward x5"),
     new Upgrade("Paper Targets II",                             100,         			    function() { shoot[7] *= 4 },   "shoot reward x4"),
     new Upgrade("Glow-in-the-Dark Paper Targets",               240,         			    function() { shoot[7] *= 2 },   "shoot reward x2"),
-	new Upgrade("Indoor Range",                                 650,         			    function() { shoot[7] *= 1.5 }, "shoot reward x1.5"),
+	new Upgrade("Indoor Range",                                 650,         			    function() { shoot[7] *= 15 }, "shoot reward x15"),
     new Upgrade("Indoor Range II",                              15000,        			    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Indoor Range Upgrade",                         32000,       			    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Moving Targets",                               240000,      			    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Moving Targets II",		                    2040000,					function() { shoot[7] *= 2 },   "shoot reward x2"),
-    new Upgrade("Faster Targets",	                            132500000,				    function() { shoot[7] *= 2.66 },"shoot reward x2.66"),
-    new Upgrade("Personal Trainer",	                            3850000000,				    function() { shoot[7] *= 2.88 },"shoot reward x2.88"),
+    new Upgrade("Faster Targets",	                            132500000,				    function() { shoot[7] *= 266 },"shoot reward x266"),
+    new Upgrade("Personal Trainer",	                            3850000000,				    function() { shoot[7] *= 288 },"shoot reward x288"),
     new Upgrade("Camera Review System",		                    27500000000, 			    function() { shoot[7] *= 3 },   "shoot reward x3"),
     new Upgrade("Digital Impact System",		                5000000000000,			    function() { shoot[7] *= 3 },   "shoot reward x3"),
     new Upgrade("Indoor Range III",		                        25000000000000,			    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Indoor Range Armory",		                    250000000000000,			function() { shoot[7] *= 2 },   "shoot reward x2"),
-    new Upgrade("200 Acre Outdoor Rifle Range",		            3500000000000000,		    function() { shoot[7] *= 1.5 }, "shoot reward x1.5"),
+    new Upgrade("200 Acre Outdoor Rifle Range",		            3500000000000000,		    function() { shoot[7] *= 15 }, "shoot reward x15"),
     new Upgrade("Rifle Range Tower",		                    10000000000000000,		    function() { shoot[7] *= 2 },   "shoot reward x2"),
-    new Upgrade("Tower Laser Range Finder",		                150000000000000000,		    function() { shoot[7] *= 1.5 }, "shoot reward x1.5"),
+    new Upgrade("Tower Laser Range Finder",		                150000000000000000,		    function() { shoot[7] *= 150 }, "shoot reward x150"),
     new Upgrade("Tower Digital Impact System",		            750000000000000000,		    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Indoor Range Bar",		                        1500000000000000000,	    function() { shoot[7] *= 3 },   "shoot reward x3"),
-    new Upgrade("250 Acre Close-Quarter Marksman Range",		10000000000000000000,	    function() { shoot[7] *= 2 },   "shoot reward x2"),
+    new Upgrade("250 Acre Close-Quarter Marksman Range",		10000000000000000000,	    function() { shoot[7] *= 20 },   "shoot reward x20"),
     new Upgrade("Close-Quarter Range Instructor",		        12500000000000000000,	    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Close-Quarter Range Tower",		            25000000000000000000,	    function() { shoot[7] *= 2 },   "shoot reward x2"),
     new Upgrade("Sniper School",		                        50000000000000000000,	    function() { shoot[7] *= 3 },   "shoot reward x3"),
     new Upgrade("2,000 Acre Sniper Range",		                75000000000000000000,	    function() { shoot[7] *= 3 },   "shoot reward x3"),
     new Upgrade("Sniper Range Digital Overhaul",		        500000000000000000000,	    function() { shoot[7] *= 2 },   "shoot reward x2"),
-	new Upgrade("25,000 Acre Range Expansion/Upgrade",          1000000000000000000000,     function() { shoot[7] *= 2 },   "shoot reward x2")
+	new Upgrade("25,000 Acre Range Expansion/Upgrade",          1000000000000000000000,     function() { shoot[7] *= 2000 },   "shoot reward x2000")
 ];
 
 var shootTimeUpgradesOwned;
 var shootTimeUpgrades = [
-    new Upgrade("Weston Select Trigger",     		90,         				function() { shoot[3] /= 1.5 },     "shoot time /1.5"),
-    new Upgrade("Trigger Assembly Upgrade",     	630,        				function() { shoot[3] /= 1.5 },     "shoot time /1.5"),
-    new Upgrade("Selector Switch Upgrade",     		5750,       				function() { shoot[3] /= 1.25 },    "shoot time /1.25"),
-    new Upgrade("Hammer Upgrade",     				50000,      				function() { shoot[3] /= 1.25 },    "shoot time /1.25"),
+    new Upgrade("Weston Select Trigger",     		90,         				function() { shoot[3] /= 1.50 },     "shoot time /1.50"),
+    new Upgrade("Trigger Assembly Upgrade",     	630,        				function() { shoot[3] /= 1.50 },     "shoot time /1.50"),
+    new Upgrade("Selector Switch Upgrade",     		5750,       				function() { shoot[3] /= 1.50 },    "shoot time /1.50"),
+    new Upgrade("Hammer Upgrade",     				50000,      				function() { shoot[3] /= 1.50 },    "shoot time /1.50"),
     new Upgrade("Automatic Selector",				375000,						function() { shoot[3] /= 1.10 },    "shoot time /1.10"),
     new Upgrade("BuzzFire Trigger Kit",				1000000000,					function() { shoot[3] /= 1.10 },    "shoot time /1.10"),
-    new Upgrade("Internal Hammer",					1000000000000,				function() { shoot[3] /= 1.25 },    "shoot time /1.25"),
-    new Upgrade("Competition Shooter Series Kit",	1000000000000000,			function() { shoot[3] /= 1.25 },    "shoot time /1.25"),
-    new Upgrade("Fully Automatic Kit",				1000000000000000000,		function() { shoot[3] /= 1.25 },    "shoot time /1.25"),
-    new Upgrade("Special Operations Kit",			1000000000000000000000,		function() { shoot[3] /= 1.25 },    "shoot time /1.25")
+    new Upgrade("Internal Hammer",					1000000000000,				function() { shoot[3] /= 1.50 },    "shoot time /1.50"),
+    new Upgrade("Competition Shooter Series Kit",	1000000000000000,			function() { shoot[3] /= 1.50 },    "shoot time /1.50"),
+    new Upgrade("Fully Automatic Kit",				1000000000000000000,		function() { shoot[3] /= 1.50 },    "shoot time /1.50"),
+    new Upgrade("Special Operations Kit",			1000000000000000000000,		function() { shoot[3] /= 1.50 },    "shoot time /1.50")
 ];
 
 var ammoStockUpgradesOwned;
 var ammoStockUpgrades = [
-    new Upgrade("Ammunition Pouch",      		        100,         	    function() { shoot[2] *= 2 },    "ammo stock x2"),
-    new Upgrade("Extra Magazine",      			        25000,       	    function() { shoot[2] *= 2 },    "ammo stock x2"),
-    new Upgrade("LR Magazine Extension kit",	        150000,      	    function() { shoot[2] *= 2 },    "ammo stock x2"),
-    new Upgrade("X250 Dual Sport Magazine",		        75000000,		    function() { shoot[2] *= 2 },    "ammo stock x2"),
-	new Upgrade("Miles Gear Triple Slot Magazine",		500000000,		    function() { shoot[2] *= 2 },    "ammo stock x2")
+    new Upgrade("Ammunition Pouch",      		        100,         	    function() { shoot[2] *= 4 },    "ammo stock x4"),
+    new Upgrade("Extra Magazine",      			        25000,       	    function() { shoot[2] *= 4 },    "ammo stock x4"),
+    new Upgrade("LR Magazine Extension kit",	        150000,      	    function() { shoot[2] *= 4 },    "ammo stock x4"),
+    new Upgrade("X250 Dual Sport Magazine",		        75000000,		    function() { shoot[2] *= 4 },    "ammo stock x4"),
+	new Upgrade("Miles Gear Triple Slot Magazine",		500000000,		    function() { shoot[2] *= 4 },    "ammo stock x4")
 ];
 
 var reloadTimeUpgradesOwned;
 var reloadTimeUpgrades = [
     new Upgrade("Magazine Ejector",    					270,        	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
     new Upgrade("Magazine Ejector Upgrade",    			2000,       	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
-    new Upgrade("Integrated Ejection Switch",   		17500,      	    function() { shoot[4] /= 1.25 },    "reload time /1.25"),
-    new Upgrade("Automatic Ejection System",   			125000,     	    function() { shoot[4] /= 1.25 },    "reload time /1.25"),
+    new Upgrade("Integrated Ejection Switch",   		17500,      	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
+    new Upgrade("Automatic Ejection System",   			125000,     	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
     new Upgrade("Competitive Series Ejector",			10000000,		    function() { shoot[4] /= 1.10 },    "reload time /1.10"),
-    new Upgrade("Wulframe Signature Series Ejector",	10000000000,	    function() { shoot[4] /= 1.25 },    "reload time /1.25"),
-    new Upgrade("Gold Industries PlatinumX Ejector",	10000000000000,	    function() { shoot[4] /= 1.25 },    "reload time /1.25"),
-	new Upgrade("Special Operations Ejection System",	100000000000000,	function() { shoot[4] /= 1.25 },    "reload time /1.25")
+    new Upgrade("Wulframe Signature Series Ejector",	10000000000,	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
+    new Upgrade("Gold Industries PlatinumX Ejector",	10000000000000,	    function() { shoot[4] /= 1.50 },    "reload time /1.50"),
+	new Upgrade("Special Operations Ejection System",	100000000000000,	function() { shoot[4] /= 1.50 },    "reload time /1.50")
 ];
 
 var weedPriceUpgradesOwned;
@@ -72,7 +72,7 @@ var weedPriceUpgrades = [
     new Upgrade("Field Expansion",		                    32500000,				    function() { drugMultiplier[0] *= 3 },    "weed price x3"),
     new Upgrade("Worker Smoke Area",		                7500000000,				    function() { drugMultiplier[0] *= 3 },    "weed price x3"),
     new Upgrade("Harvesting Equipment II",		            5000000000000,			    function() { drugMultiplier[0] *= 3 },    "weed price x3"),
-    new Upgrade("Worker Training",		                    500000000000000,			function() { drugMultiplier[0] *= 5 },    "weed price x5"),
+    new Upgrade("Worker Training",		                    500000000000000,			function() { drugMultiplier[0] *= 50 },    "weed price x50"),
     new Upgrade("Extra Workers",		                    2500000000000000,			function() { drugMultiplier[0] *= 3 },    "weed price x3"),
     new Upgrade("Field Expansion IV",		                5000000000000000,		    function() { drugMultiplier[0] *= 2 },    "weed price x2"),
     new Upgrade("Biologists",		                        10000000000000000,		    function() { drugMultiplier[0] *= 2 },    "weed price x2"),
@@ -89,7 +89,7 @@ var weedPriceUpgrades = [
     new Upgrade("Another weed price upgrade...",            650000000000000000000000,   function() { drugMultiplier[0] *= 2 },    "weed price x2"),
     new Upgrade("Another weed price upgrade...",            1250000000000000000000000,  function() { drugMultiplier[0] *= 3 },    "weed price x3"),
     new Upgrade("Antoher weed price upgrade...",            150000000000000000000000000,    function() { drugMultiplier[0] *= 2 },    "weed price x2"),
-    new Upgrade("Another weed price upgrade...",            750000000000000000000000000,    function() { drugMultiplier[0] *= 3 },    "weed price x3")
+    new Upgrade("Another weed price upgrade...",            750000000000000000000000000,    function() { drugMultiplier[0] *= 30 },    "weed price x30")
 ];
 
 var methPriceUpgradesOwned;
@@ -100,7 +100,7 @@ var methPriceUpgrades = [
     new Upgrade("Beakers II",                       2500000000,				    function() { drugMultiplier[1] *= 3 },    "meth price x3"),
     new Upgrade("Graduated Cylinders",		        99999000000,			    function() { drugMultiplier[1] *= 2 },    "meth price x2"),
     new Upgrade("Safety Equipment",		            5000000000000,			    function() { drugMultiplier[1] *= 3 },    "meth price x3"),
-    new Upgrade("Chemist II",		                85000000000000,			    function() { drugMultiplier[1] *= 4 },    "meth price x4"),
+    new Upgrade("Chemist II",		                85000000000000,			    function() { drugMultiplier[1] *= 40 },    "meth price x40"),
     new Upgrade("Chemical Burner",		            950000000000000,		    function() { drugMultiplier[1] *= 3 },    "meth price x3"),
     new Upgrade("Storage Flask",		            5000000000000000,		    function() { drugMultiplier[1] *= 3 },    "meth price x3"),
     new Upgrade("Storage Flask II",		            50000000000000000,		    function() { drugMultiplier[1] *= 2 },    "meth price x2"),
@@ -118,7 +118,7 @@ var methPriceUpgrades = [
     new Upgrade("Another meth price upgrade...",    750000000000000000000000,   function() { drugMultiplier[1] *= 2 },    "meth price x2"),
     new Upgrade("Another meth price upgrade...",    13500000000000000000000000,     function() { drugMultiplier[1] *= 3 },    "meth price x3"),
     new Upgrade("Another meth price upgrade...",    250000000000000000000000000,    function() { drugMultiplier[1] *= 2 },    "meth price x2"),
-    new Upgrade("Another meth price upgrade...",    950000000000000000000000000,    function() { drugMultiplier[1] *= 3 },    "meth price x3")
+    new Upgrade("Another meth price upgrade...",    950000000000000000000000000,    function() { drugMultiplier[1] *= 30 },    "meth price x30")
 ];
 
 var cocainePriceUpgradesOwned;
@@ -130,7 +130,7 @@ var cocainePriceUpgrades = [
     new Upgrade("Trash Can o'Mixing",                   5000000000000,			    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
     new Upgrade("Gasoline Container",		            25000000000000,			    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
     new Upgrade("Cocaine Base Filter",		            750000000000000,		    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
-    new Upgrade("Cocaine Drying Machine",		        3500000000000000,		    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
+    new Upgrade("Cocaine Drying Machine",		        3500000000000000,		    function() { drugMultiplier[2] *= 30 },    "cocaine price x30"),
     new Upgrade("Hydraulic Press",		                75000000000000000,		    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
     new Upgrade("Microwave Oven",		                500000000000000000,		    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
     new Upgrade("Industrial Refrigerator",		        1000000000000000000,	    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
@@ -139,7 +139,7 @@ var cocainePriceUpgrades = [
     new Upgrade("Field Expansion II",		            125000000000000000000,	    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
     new Upgrade("Field Expansion III",		            654000000000000000000,	    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
     new Upgrade("Field Expansion IV",		            1500000000000000000000,	    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
-	new Upgrade("Kitchen Upgrade",		                2500000000000000000000,	    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
+	new Upgrade("Kitchen Upgrade",		                2500000000000000000000,	    function() { drugMultiplier[2] *= 30 },    "cocaine price x30"),
     new Upgrade("Professional Underground Lab",		    5000000000000000000000,	    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
     new Upgrade("Field Expansion V",		            12500000000000000000000,	function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
     new Upgrade("Field Expansion VI",		            65400000000000000000000,	function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
@@ -148,7 +148,7 @@ var cocainePriceUpgrades = [
     new Upgrade("Another cocaine price upgrade...",     25000000000000000000000000,     function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
     new Upgrade("Another cocaine price upgrade...",     175000000000000000000000000,    function() { drugMultiplier[2] *= 3 },    "cocaine price x3"),
     new Upgrade("Another cocaine price upgrade...",     825000000000000000000000000,    function() { drugMultiplier[2] *= 2 },    "cocaine price x2"),
-    new Upgrade("Another cocaine price upgrade...",     10000000000000000000000000000,  function() { drugMultiplier[2] *= 3 },    "cocaine price x3")
+    new Upgrade("Another cocaine price upgrade...",     10000000000000000000000000000,  function() { drugMultiplier[2] *= 30 },    "cocaine price x30")
 ];
 
 function Upgrade(name, price, run, desc) {
