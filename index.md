@@ -85,7 +85,7 @@
     </tr>
     <tr>
       <td align=center>Link:</td>
-      <td align=center><a href="/moneylife/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
+      <td align=center><a href="/moneylife/old/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
       <td align=center><a href="/gse/index.html" target="_blank">Play! (Opens in new Tab/Window!)</a></td>
     </tr>
     <tr>
