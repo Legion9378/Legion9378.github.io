@@ -1,0 +1,41 @@
+main {
+	background-color: #444;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0.2em;
+}
+
+caption {
+  color: white;
+  background: hsl(13, 96%, 39%);
+  font-size: 1.5em;
+  box-shadow: .1em .1em .1em 0 hsl(0, 0, 50%);
+  padding: .2em .2em .2em 2em;
+  width: 10em;
+  margin-left: -.6em;
+  position: relative;
+}
+
+th,
+td {
+	padding: 0.2em 0.5em;
+	border-radius: 0.1em;
+	color: #ffffff;
+}
+
+thead th {
+	background-color: #777777;
+	color: #ffffff;
+}
+
+td {
+	font-style: italic;
+	text-align: right;
+	box-shadow: inset 1px 3px 5px -3px rgba(0, 127, 255, 0.5);
+}
+
+td:empty {
+	box-shadow: none;
+}
