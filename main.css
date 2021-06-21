@@ -13,7 +13,7 @@ caption {
   font-size: 1.5em;
   box-shadow: .1em .1em .1em 0 hsl(0, 0, 50%);
   padding: .2em .2em .2em 2em;
-  width: 10em;
+  width: 20em;
   margin-left: -.6em;
   position: relative;
 }
@@ -32,7 +32,7 @@ thead th {
 
 td {
 	font-style: italic;
-	text-align: right;
+	text-align: center;
 	box-shadow: inset 1px 3px 5px -3px rgba(0, 127, 255, 0.5);
 }
 
