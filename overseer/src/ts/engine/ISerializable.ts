@@ -1,3 +1,0 @@
-interface ISerializable {
-    serialize(): any;
-}
