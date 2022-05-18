@@ -1,0 +1,68 @@
+@import "variables";
+
+.item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  min-height: 3.5rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid var(--border-colour);
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0,0,0,0.05);
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    background-color: rgba(0,0,0,0.075);
+  }
+
+  &:active {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: #9a9a9a 0 2px;
+  }
+}
+
+.purchasedItem {
+  composes: item;
+
+  &:disabled {
+    text-decoration: none;
+  }
+}
+
+.header {
+  display: flex;
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.name {
+  flex: 1;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1;
+  padding-right: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.subSection {
+  font-size: 0.875rem;
+}
+
+.property {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.rate {
+  text-transform: capitalize;
+}

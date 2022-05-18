@@ -1,0 +1,87 @@
+@import "variables";
+
+.card {
+  min-height: 14rem;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-bottom: 2px solid var(--border-colour);
+  border-right: 2px solid var(--border-colour);
+  display: flex;
+  flex-direction: column;
+
+  @media (--sm) {
+    margin-right: 1rem;
+    width: auto;
+    min-width: 12rem;
+  }
+}
+
+.body {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.quantity {
+  opacity: 0.5;
+}
+
+.actionBar {
+  display: flex;
+}
+
+.btnStyles {
+  flex: 1;
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--border-colour);
+  cursor: pointer;
+
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0,0,0,0.05);
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    background-color: rgba(0,0,0,0.075);
+  }
+
+  &:active {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: #9a9a9a 0 2px;
+  }
+}
+
+.actionBtn {
+  composes: btnStyles;
+
+  &:first-of-type {
+    border-right: 1px solid var(--border-colour);
+  }
+}
+
+
+.headerBtn {
+  composes: btnStyles;
+  max-height: 2.5rem;
+  border-bottom: 1px solid var(--border-colour);
+}

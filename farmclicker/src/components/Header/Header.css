@@ -1,0 +1,34 @@
+@import "variables";
+
+.header {
+  height: 4rem;
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: var(--z-index-sticky);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  @media(--md) {
+    font-size: 1.5rem;
+  }
+}
+
+.total {
+  line-height: 1;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+
+  @media(--md) {
+    display: none;
+  }
+}

@@ -2,40 +2,44 @@ body {
 	background-color: black;
 }
 
-table {
-	border-collapse: separate;
-	border-spacing: 0.2em;
-}
-
 caption {
   color: white;
   background: hsl(13, 96%, 39%);
   font-size: 1.5em;
   box-shadow: .1em .1em .1em 0 hsl(0, 0, 50%);
   padding: .2em .2em .2em 2em;
-  width: 20em;
+  width: 30em;
   margin-left: -.6em;
   position: relative;
 }
 
-th,
-td {
-	padding: 0.2em 0.5em;
-	border-radius: 0.1em;
-	color: #ffffff;
+.p-con1 {
+	margin: 0 auto;
+	border: 1px solid silver;
+	height: 154px
 }
 
-thead th {
-	background-color: #555555;
-	color: #ffffff;
+.p-con1 div {
+	display: inline-block;
 }
 
-td {
-	font-style: italic;
-	text-align: center;
-	box-shadow: inset 1px 3px 5px -3px rgba(0, 127, 255, 0.5);
+.bit1 {
+	border: 1px solid silver;
+	height: 150px;
+	width: 99%;
 }
 
-td:empty {
-	box-shadow: none;
+.p-con {
+	margin: 0 auto;
+	border: 1px solid silver;
+}
+
+.p-con div {
+	display: inline-block;
+}
+
+.bit {
+	border: 1px solid silver;
+	height: 150px;
+	width: 180px;
 }
