@@ -1,15 +1,15 @@
 const defaultGame = {
     x: {
-        amount: new D(0)
+        amount: new D(500)
     },
     y: {
-        amount: new D(0)
+        amount: new D(500)
     },
     z: {
-        amount: new D(0)
+        amount: new D(500)
     },
     rp: {
-        amount: new D(0)
+        amount: new D(50)
     },
     upgrades: [],
     rupgrades: [],
