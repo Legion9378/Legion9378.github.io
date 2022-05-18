@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <title>Bubbleverse</title>
+  <script language="javascript" type="text/javascript" src="game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/notify.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="universe.js"></script>
+  <script language="javascript" type="text/javascript" src="ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top_menu_bar">
+        <button class="btn_white achievementsbtn t12" id="achievementsbtn"><b>Achievements</b></button>
+        <button class="btn_white prestigebtn t12" id="prestigebtn"><b>Prestige</b></button>
+        <div class="panel_stat_currency">
+            <div class="stat_container">
+                <p class="align_right t16 stat_paragraph t_green" id="stat_currency"><b>0 $</b></p>
+                <p class="align_right t12 stat_paragraph" id="stat_multiplier">Multiplier: <a style="color:#ED6A5A;"></a></p>
+            </div>
+        </div>
+        <button class="btn_white spawnbtn t16" id="spawnbtn"><b>Spawn</b></button>
+    </div>
+
+    <div id="p5_canvas_container" class="p5_canvas_container"></div>
+    <div id="menu_container" class="menu_container" style="display:none;">
+        <div class="bigmenu_container" id="menu_achievements">
+            <p class="bigmenu_header t16"><b>Achievements</b></p>
+            <div class="achievement_container t12" id="ach_beginnerCollector" style="display:none;"><b>Beginner Collector</b> - Collect 50 bubbles</div>
+            <div class="achievement_container t12" id="ach_advancedCollector" style="display:none;"><b>Advanced Collector</b> - Collect 200 bubbles</div>
+            <div class="achievement_container t12" id="ach_professionalCollector" style="display:none;"><b>Professional Collector</b> - Collect 500 bubbles</div>
+            <div class="achievement_container t12" id="ach_masterCollector" style="display:none;"><b>Master Collector</b> - Collect 1000 bubbles</div>
+            <div class="achievement_container t12"><i>Play the game to unlock more!</i></div>
+        </div>
+        <div class="bigmenu_container" id="menu_prestige">
+            <p class="bigmenu_header t16"><b>Prestige</b></p>
+            <div class="prestige_controls" id="prestige_controls">
+                <div class="stat_paragraph t14" id="stat_next_prestigetier">Prestige Level <a id="prestige_lvl">1</a></div>
+                <div class="stat_paragraph t12">You need <a class="t_green" id="prestige_price">20000$</a> to buy this. You will lose all progress except for achievements but your global multiplier will be increased. by 0.5x<a id="prestige_additionalinfo">Additionally other new secret things will be unlocked.</a></div>
+                <p class="stat_paragraph"><button class="btn_white btn_prestige_buy t16 t_orange" id="btn_prestige_buy">Buy Prestige</button><a class="t12"></a></p>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar_container" class="sidebar_container">
+        <div class="sidebar_title">
+            <p class="stat_paragraph sidebar_titletext"><b>Upgrades</b></p>
+            <p class="stat_paragraph">
+                <a class="link_button" id="sidebar_category_bubble_btn">Bubble</a>
+                <a class="link_button" id="sidebar_category_auto_btn">Auto</a>
+                <a class="link_button" id="sidebar_category_physics_btn" style="display:none;">Physics</a>
+            </p>
+        </div>
+        <div class="upgrade_container" id="sidebar_auto_upgrades" style="display:none;">
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Auto Spawn Rate</b> <a class="t12 tc3" id="stat_upgr_asr_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2" id="upgr_spawn_text">Bubbles spawn faster<!--<a class="tc1" stat="stat_next_asr">2</a>--></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_asr_cost">1000$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_asr">Buy</button><button class="btn_white btn_upgrade_buy t16" id="upgr_asr_onoff" style="display:none;">ON</button><a class="t12"></a></p>
+            </div>
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Auto Collector</b> <a class="t12 tc3" id="stat_upgr_acr_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2" id="upgr_collect_text">Automatically collect bubbles faster<!--<a class="tc1" stat="stat_next_asr">2</a>--></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_acr_cost">1000$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_acr">Buy</button><button class="btn_white btn_upgrade_buy t16" id="upgr_acr_onoff" style="display:none;">ON</button><a class="t12"></a></p>
+            </div>
+        </div>
+        <div class="upgrade_container" id="sidebar_physics_upgrades" style="display:none;">
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Atraction Radius</b> <a class="t12 tc3" id="stat_upgr_ar_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">The upgraded attraction radius will be <a class="tc1" id="stat_next_ar">2</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_ar_cost">500$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_ar">Buy</button><a class="t12"></a></p>
+            </div>
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Bubble Merge Monetizer</b> <a class="t12 tc3" id="stat_upgr_mb_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Get a bonus each time bubbles merge <a class="tc1" id="stat_next_mb">2</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_mb_cost">500$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_mb">Buy</button><a class="t12"></a></p>
+            </div>
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Bubble Merge Growth</b> <a class="t12 tc3" id="stat_upgr_mg_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Bubbles get a growth bonus for each merge <a class="tc1" id="stat_next_mg">2</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_mg_cost">500$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_mg">Buy</button><a class="t12"></a></p>
+            </div>
+        </div>
+        <div class="upgrade_container" id="sidebar_bubble_upgrades">
+            <!-- UPGRADE BUBBLE VALUE-->
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Bubble Value</b> <a class="t12 tc3" id="stat_upgr_bv_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Bubbles start with value of <a class="tc1" id="stat_next_bv">2</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_bv_cost">500$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_bv">Buy</button><a class="t12"></a></p>
+            </div>
+            <!-- UPGRADE MAXIMUM VALUE-->
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Maximum Value</b> <a class="t12 tc3" id="stat_upgr_mbv_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Increases max. bubble value</p>
+                <p class="stat_paragraph t12 tc2">Next max. value: <a class="tc1" id="stat_next_mbv">200</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_mbv_cost">1000$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_mbv">Buy</button><a class="t12"></a></p>
+            </div> 
+            <!-- UPGRADE MAXIMUM NUMBER-->
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Maximum Number</b> <a class="t12 tc3" id="stat_upgr_mbnr_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Increases max. number of bubbles</p>
+                <p class="stat_paragraph t12 tc2">Next max. number: <a class="tc1" id="stat_next_mbnr">200</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_mbnr_cost">1000$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_mbnr">Buy</button><a class="t12"></a></p>
+            </div> 
+            <!-- UPGRADE BUBBLES PER CLICK-->
+            <div class="upgrade_panel">
+                <p class="stat_paragraph t16"><b>Bubbles per Click</b> <a class="t12 tc3" id="stat_upgr_bpc_level">(1)</a></p>
+                <p class="stat_paragraph t12 tc2">Increases number of bubbles spawned per click</p>
+                <p class="stat_paragraph t12 tc2">Next: <a class="tc1" id="stat_next_bpc">200</a></p>
+                <p class="stat_paragraph t12 tc2">Cost: <a class="tc1" id="stat_upgr_bpc_cost">1000$</a></p>
+                <p class="stat_paragraph"><button class="btn_white btn_upgrade_buy t16" id="buy_upgr_bpc">Buy</button><a class="t12"></a></p>
+            </div> 
+        </div>
+    </div>
+    <button class="btn_white resetbtn t16" id="resetbtn"><b>HARD RESET</b></button>
+    <div class="footer">
+        <div class="footer_content">
+            More Coming Soon...
+        </div>
+    </div>
+</body>
+</html>

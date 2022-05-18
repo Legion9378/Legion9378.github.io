@@ -1,0 +1,75 @@
+This is a changelog and will be updated whenever there is an update to the game
+
+0.4.1 - Wandering + Combat - 10/28/2020:
+  Ways to increase damage, health and other stats will come in the next update, which will probably intorduce the farming skill. Other skills will come after
+  Added Enemy Rewards
+  Added Health Regeneration and Health Regeneration Stat
+  Added Dodge Chance Stat
+  There are a total of 10 enemies, with different rewards and stats
+  Fixed double percentage bug
+  Added Combat
+  Actually not 1.0.0, 1.0.0 will be the full release (there will still be updates after)
+  Added Wandering (mostly, will still be updates later probably):
+    You can now use the wander button, which has a base of 5 second cooldown
+    every time you press it, it will roll a random number which will determine what happens
+    You can either find nothing, find some resources, find special people, or find things to fight
+    When you find resources while wandering, it is based on your current resources so its exponential
+  Added new STATS, which are used when fighting things while wandering and also will be used in research, which will be implemented later
+  Updated stats page to include new stats
+  Fixed bug where farming is always unlocked
+  Made Farm information update whenever you buy a farm
+  Fixed bug where the farm wouldn't be unlocked when you loaded a save
+  Fixed bug where all saves would be saved as integers instead of floats
+  Added Armor and weapon display
+  Added Damage Reduction, Attack Speed, and Attack Damage display
+  Added Enemy Health, Health Bar, and Name Display
+  Added Wander Control Buttons (yes/no)
+  Made combat displays unlockable
+  Fixed B I G bug where the whole game would be shifted up and became unplayable
+  Fixed InfoBox Cutoff
+  Fixed bug where Combat Displays would always be visible
+  Added EnemiesEncountered and EnemiesDefeated Stat
+  Added some enemies
+  Added a lil bottom page card
+
+0.3.0 - 7/13/2020:
+  Changed price multiplier of buildings from 1.25 to 1.1
+  Added TimesWandered stat
+  Added Playtime stat
+  Added Version stat
+  made all stats actually update (only playtime and timeswandered update right now because there is no way to inrcrease skill level)
+  Made playtime stat show up as hours, minutes, and seconds instead of just a really big seconds number
+  Changed the version numbers because they were wrong
+  Next update will probably be 1.0.0, and it should have wandering implemented (not fully because there will probably be a lot more updates later), and maybe skills implemented but that probably will come later, one at a time in minor updates
+
+0.2.5.0 - 7/12/2020:
+  Forgot some things in last update so here they Are
+  put line breaks in between skills in stats page
+  Added some stuff to the 0.0.1 changelog because it wasn't complete
+  made it so scavenge cooldown bar immediately starts moving instead of waiting 2.5 seconds
+  Just a tiny little update, basically no new features but I like to put everything I do here
+
+0.2.0 - 7/12/2020:
+  Made farm button actually do something
+  Farms unlock the farming tab
+  Text now cuts off at bottom of screen before it overlaps with the buttons
+  Changed the farm info box a bit to include the amount of farms
+  Did some more optimization to make future updates easier
+  Fixed tabs (before they were off the page but they had nothing so you couldn't tell)
+  Added Wander button, no functionality
+  Added wander button cooldown bar, button activates animation (the animation took way too long to make), doesn't do anything else
+  Added farming tab
+  Added Stats tab
+  Updated Stats tab to include skills, will add other stats later
+
+0.1.0 - 7/10/2020:
+  Just the skeleton for the game, some features
+  Added Scavenge button
+  Added Resource viewer
+  Added wood, scrap, and Food
+  Added save and clear button
+  Added info box
+  Home and wander tabs, wander tab has no content
+  added farm button unlocked at 50 wood, does nothing yet
+  Added info boxes
+  Added starving which divides all your production by 4
