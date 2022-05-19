@@ -458,7 +458,7 @@ Game.techData = (function () {
         },
         tabAlerts: ['resources'],
         onApply: function() {
-            charcoalEngineOutput = 4;
+            charcoalEngineOutput *= 4;
         }
     });
 
@@ -474,7 +474,7 @@ Game.techData = (function () {
         newTechs: ['unlockBatteries'],
         tabAlerts: ['resources'],
         onApply: function() {
-            solarPanelOutput = 3;
+            solarPanelOutput *= 3;
         }
     });
 
